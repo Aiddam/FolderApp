@@ -1,0 +1,21 @@
+﻿@model FolderEntity
+
+@foreach (var folder in Model.SubFolders)
+{
+        <li>
+            <details>
+                <summary>@folder.Name</summary>
+            @if (folder.SubFolders.Any() || folder.Files.Any())
+            {
+                        <ul>
+                    @Html.Partial("_FolderList", folder)
+                        </ul>
+            }
+            </details>
+        </li>
+}
+
+@foreach (var file in Model.Files)
+{
+        <li>@file.Name</li>
+}

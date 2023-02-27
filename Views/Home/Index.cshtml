@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<form asp-controller="Folder" asp-action="UploadFiles" method="post" enctype="multipart/form-data">
+    <label for="folder">Select folder to upload:</label>
+    <input type="file" id="files" name="files" webkitdirectory directory multiple required>
+    <button type="submit">Upload</button>
+</form>
+
+
+
+
+
+
+
+

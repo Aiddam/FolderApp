@@ -1,0 +1,42 @@
+﻿
+<style>
+    .button-wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+
+    .button:hover {
+        background-color: #3e8e41;
+    }
+</style>
+<h1 style="text-align: center; font-size: 48px;">Instructions for using the programme</h1>
+
+	<h2>Step 1 add a database</h2>
+	<p>Type Update-Database in the terminal. You need this to create a database in MS SQL, without it the program will not work.</p>
+
+	<h2>Step 2: Uploading files or folders</h2>
+	<p>To upload files or folders, click on "Upload Files" or "Upload Folder" respectively. Select the desired file or folder in the dialog box and click "Open". The files or folders will be added to the list of uploaded items.</p>
+
+	<h2>Step 3: Viewing uploaded items</h2>
+	<p>To view the downloaded items, click on "Folders". You will see a list of downloaded files and folders.</p>
+
+    <div class="button-wrapper">
+        <a asp-controller="Home" asp-action="Index">
+                <button class="button">Click to start!</button>
+        </a>
+</div>
+
